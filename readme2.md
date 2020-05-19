@@ -15,8 +15,8 @@ Below are the agreed processes for the project:
 | ------------|------------------------|-------------|-------------|---------|
 | `master`    | YES                    | N/A         | The source of truth branch.  Must always be stable and ready for Production deploy. | N/A
 | feature | NO                         | `master`    | Used for active development features (such as User Stories or code changes).  Merges into master from a Pull Request (required). | feature-GWEEDRDP-99-create-login-page
-| `hotfix-*` | NO                      | `master`    | These are critical defect/bug fixes against production. Merges into master from a Pull Request (required). | hotfix-GWEEDRDP-99-broken-link
-| `documentation` | NO                      | `master`    | These are critical defect/bug fixes against production. Merges into master from a Pull Request (required). | documentation-update-process-flow
+| hotfix | NO                      | `master`    | These are critical defect/bug fixes against production. Merges into master from a Pull Request (required). | hotfix-GWEEDRDP-99-broken-link
+| documentation | NO                      | `master`    | These are critical defect/bug fixes against production. Merges into master from a Pull Request (required). | documentation-update-process-flow
 
 ## Development Process for New feature
 *Git  code for new feature*
