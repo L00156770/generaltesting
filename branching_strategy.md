@@ -115,4 +115,7 @@ Why did Team Marvel choose this strategy?
 Other Comments:   
 Various branching strategies possible, etc
 Important to tack into account infrastructure and project needs when choosing a strategy
+Envs - Staging/Prod
+Tests - Merge into Master after successfull biuld in Stage, deploy to Prod?
+etc
 ```
