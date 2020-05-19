@@ -9,6 +9,8 @@ Below are the agreed processes for the project:
 - [Development Process for New Feature](#development-process-for-new-feature)
 - [Development Process for Hotfix](#development-process-for-hotfix)
 - [Development Process for Documentation](#development-process-for-hotfix)
+- [Development Process for Documentation](#development-process-for-hotfix)
+- [Team Marvel Considerations](#team-marvel-considerations)
 
 ## Branch Naming Conventions
 
@@ -43,8 +45,6 @@ Below are the agreed processes for the project:
    4. Deploy master to staging environment.  
       -If build/tests pass in staging, deploy to Production
       -If build/tests fail in staging, rollback changes to previous release and restart process
-
-
 
 ## Development Process for Hotfix
 *use only for critical bugs requiring immediate fix*
@@ -106,4 +106,13 @@ Below are the agreed processes for the project:
       -If build/tests pass in staging, deploy to Production
       -If build/tests fail in staging, rollback changes to previous release and restart process
 
+## Team Marvel Considerations
+```
+Why did Team Marvel choose this strategy?   
+1. Reason 1
+2. Reason 2
 
+Other Comments:   
+Various branching strategies possible, etc
+Important to tack into account infrastructure and project needs when choosing a strategy
+```
