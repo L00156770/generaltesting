@@ -1,15 +1,11 @@
-| [Home](README.md) ▸ **Continuous Deployment** |
-|-----|
+| [Return to Home](README.md) ▸ **Branching Strategy** |
+| ---------------------------------------------------- |
 
-# Continuous Deployment
+# Branching Strategy
 
-Use this strategy for projects where features get deployed as soon as they're ready.
-
-We follow the [**GitHub flow**](https://guides.github.com/introduction/flow/)
-workflow as closely as possible. This page showcases common development scenarios
-and how to deal with them from a branching point of view.
-
-- [Branches Overview](#branches-overview)
+Team Marvel has selected the branching strategy of:  [**GitHub Flow**](https://guides.github.com/introduction/flow/)  
+Below are the 
+- [Branch Naming Conventions](#branch-naming-conventions)
 - [Develop a new feature](#develop-a-new-feature)
 - [Develop multiple features in parallel](#develop-multiple-features-in-parallel)
 - [Create and deploy a release](#create-and-deploy-a-release)
@@ -18,19 +14,15 @@ and how to deal with them from a branching point of view.
 - [Production hot fix](#production-hot-fix)
 - [Develop in a platform repo](#platform-repo)
 
-## Branches Overview
+## Branch Naming Conventions
 
-![Github flow workflow](images/continuous-overview.png)
-
-| Branch  | Protected?  | Base Branch      | Description    |
-| :-------|:------------|:-----------------|:---------------|
-| `master`| YES         | N/A              | What is live in production (**stable**).<br/>A pull request is required to merge code into `master`. |
-| feature | NO          | `master`         | Cutting-edge features (**unstable**). These branches are used for any maintenance features / active development. |
-| `hotfix-*` | NO       | `master`         | These are bug fixes against production.<br/> |
+| Branch Name | Pull Request Required? | Base Branch | Description | Example |      
+| ------------|------------------------|-------------|-------------|---------|
+| `master`| YES         | N/A              | The source of truth branch.  Must always be stable and ready for Production deploy. | N/A
+| feature | NO          | `master`         | Used for active development features (such as User Stories or code changes).  Merges into master from a Pull Request. |
+| `hotfix-*` | NO       | `master`         | These are critical defect/bug fixes against production. Merges into master from a Pull Request. | hotfix-
 
 ## Develop a new feature
-
-![Hotfix **use rarely**](images/continuous-new-feature.png)
 
 1. Create a feature branch based off of `master`.
 
