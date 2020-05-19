@@ -4,7 +4,7 @@
 # Branching Strategy
 
 Team Marvel has selected the branching strategy of:  [**GitHub Flow**](https://guides.github.com/introduction/flow/)  
-Below are the 
+Below are the agreed processes for the project:
 - [Branch Naming Conventions](#branch-naming-conventions)
 - [Develop a new feature](#development-process-for-new-feature)
 - [Production hot fix](#development-process-for-hotfix)
@@ -14,9 +14,9 @@ Below are the
 | Branch Name | Pull Request Required? | Base Branch | Description | Example |      
 | ------------|------------------------|-------------|-------------|---------|
 | `master`    | YES                    | N/A         | The source of truth branch.  Must always be stable and ready for Production deploy. | N/A
-| feature | NO                         | `master`    | Used for active development features (such as User Stories or code changes).  Merges into master from a Pull Request. | feature-GWEEDRDP-99-create-login-page
-| `hotfix-*` | NO                      | `master`    | These are critical defect/bug fixes against production. Merges into master from a Pull Request. | hotfix-GWEEDRDP-99-broken-link
-| `documentation` | NO                      | `master`    | These are critical defect/bug fixes against production. Merges into master from a Pull Request. | documentation-update-process-flow
+| feature | NO                         | `master`    | Used for active development features (such as User Stories or code changes).  Merges into master from a Pull Request (required). | feature-GWEEDRDP-99-create-login-page
+| `hotfix-*` | NO                      | `master`    | These are critical defect/bug fixes against production. Merges into master from a Pull Request (required). | hotfix-GWEEDRDP-99-broken-link
+| `documentation` | NO                      | `master`    | These are critical defect/bug fixes against production. Merges into master from a Pull Request (required). | documentation-update-process-flow
 
 ## Development Process for New feature
 *Git  code for new feature*
