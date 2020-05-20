@@ -26,7 +26,7 @@ Below are the agreed processes for the project:
    ```
    $ git clone https://github.com/rlennon/GweedoreDP.git
    $ cd GweedoreDP
-   $ git checkout master test
+   $ git checkout master
    $ git checkout -b feature-GWEEDRDP-99-create-login-page
    $ git push --set-upstream origin feature-GWEEDRDP-99-create-login-page
    ```
