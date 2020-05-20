@@ -9,7 +9,6 @@ Below are the agreed processes for the project:
 - [Development Process for New Feature](#development-process-for-new-feature)
 - [Development Process for Hotfix](#development-process-for-hotfix)
 - [Development Process for Documentation](#development-process-for-hotfix)
-- [Development Process for Documentation](#development-process-for-hotfix)
 - [Team Marvel Considerations](#team-marvel-considerations)
 
 ## Branch Naming Conventions
@@ -21,7 +20,7 @@ Below are the agreed processes for the project:
 | hotfix | NO                      | `master`    | Used for critical defect/bug fixes against production. Merges into master from a Pull Request (required). | hotfix-GWEEDRDP-99-broken-link
 | documentation | NO                      | `master`    | Used for updating project documentation. Merges into master from a Pull Request (required). | documentation
 
-## Development Process for New feature
+## Development Process for New Feature
 
 1. Pull from master into defined branch pattern:
    ```
@@ -41,10 +40,10 @@ Below are the agreed processes for the project:
    1. Open Pull Request with respective branch name (e.g. feature-GWEEDRDP-99-create-login-page)
    2. Pull Request must be reviewed to merge into Master
    3. Once reviewed/approved, merge can be completed into Master
-      -NOTE:  Deleting branch is recommended, but for purposes of this project, we will not delete any branches
+      -*NOTE:  Deleting branch is recommended, but for purposes of this project, we will not delete any branches.*
    4. Deploy master to staging environment.  
-      -If build/tests pass in staging, deploy to Production
-      -If build/tests fail in staging, rollback changes to previous release and restart process
+      *If build/tests pass in staging, deploy to Production
+       If build/tests fail in staging, rollback changes to previous release and restart process*  
 
 ## Development Process for Hotfix
 *use only for critical bugs requiring immediate fix*
