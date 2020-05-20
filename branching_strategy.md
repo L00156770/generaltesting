@@ -1,4 +1,4 @@
-| [Return to Home](README.md) ▸ **Branching Strategy** |
+| [Return to Home](README.md)
 | ---------------------------------------------------- |
 
 # Branching Strategy
@@ -24,6 +24,7 @@ Below are the agreed processes for the project:
 
 1. Pull from master into defined branch pattern:
    ```
+   $ git clone https://github.com/rlennon/GweedoreDP.git
    $ git checkout master
    $ git checkout -b feature-GWEEDRDP-99-create-login-page
    $ git push --set-upstream feature-GWEEDRDP-99-create-login-page
