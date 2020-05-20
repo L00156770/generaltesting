@@ -22,7 +22,7 @@ Below are the agreed processes for the project:
 
 ## Development Process for New Feature
 
-1. Pull from master into defined branch pattern:
+1. Pull from master into defined branch pattern like so:
    ```
    $ git clone https://github.com/rlennon/GweedoreDP.git
    $ cd GweedoreDP
