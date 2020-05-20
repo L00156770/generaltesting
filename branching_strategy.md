@@ -1,7 +1,7 @@
 | [Return to Home](README.md)
 | ---------------------------------------------------- |
 
-# BBranching Strategy
+# Branching Strategy
 
 Team Marvel has selected the branching strategy of:  [**GitHub Flow**](https://guides.github.com/introduction/flow/)  
 Below are the agreed processes for the project:
@@ -13,12 +13,12 @@ Below are the agreed processes for the project:
 
 ## Branch Naming Conventions
 
-| Branch Name | Pull Request Required? | Base Branch | Description | Example |      
+| Branch Name | Base Branch | Pull Request? | Description | Example |      
 | ------------|------------------------|-------------|-------------|---------|
-| `master`    | YES                    | N/A         | The source of truth branch.  Must always be stable and ready for Production deploy. | N/A
-| feature | NO                         | `master`    | Used for active development features (such as User Stories or code changes).  Merges into master from a Pull Request (required). | feature-GWEEDRDP-99-create-login-page
-| hotfix | NO                      | `master`    | Used for critical defect/bug fixes against production. Merges into master from a Pull Request (required). | hotfix-GWEEDRDP-99-broken-link
-| documentation | NO                      | `master`    | Used for updating project documentation. Merges into master from a Pull Request (required). | documentation
+| `master`    | N/A                    | N/A         | The source of truth branch.  Must always be stable and ready for Production deploy. | N/A
+| feature | `master`                          | NO   | Used for active development features (such as User Stories or code changes).  Merges into master from a Pull Request (required). | feature-GWEEDRDP-99-create-login-page
+| hotfix | `master`                       | NO    | Used for critical defect/bug fixes against production. Merges into master from a Pull Request (required). | hotfix-GWEEDRDP-99-broken-link
+| documentation | `master`                   | NO   | Used for updating project documentation. Merges into master from a Pull Request (required). | documentation
 
 ## Development Process for New Feature
 
@@ -33,8 +33,8 @@ Below are the agreed processes for the project:
 
 2. Develop approriate code changes, add, commit, push:
    ```
-   $ git add -A .
-   $ git commit -m "Added new feature code"
+   $ git add -A
+   $ git commit -m "Enter clear description of the commit reason/details"
    $ git push
    ```
 
@@ -65,15 +65,9 @@ Below are the agreed processes for the project:
    $ git push --set-upstream hotfix-broken-links
    ```
 
-3. Add a test case to validate the bug, fix the bug, and commit
-   *When doing a hotfix you should at _least_ pair on the fix with somebody or
-   review it in person with one other engineer before releasing it. We're
-   running without training wheels here and want to do our best not to have to
-   do a stream of hotfixes in production.*
-   ```
-   ... add test, fix bug, verify
-   $ git add -A .
-   $ git commit -m "Fix broken links"
+3. Test cases/validation should be done to mitigate deployment risk.
+   $ git add -A
+   $ git commit -m "Enter clear description of the commit reason/details"
    $ git push
    ```
 
@@ -87,37 +81,35 @@ Below are the agreed processes for the project:
 1. Pull from master into defined branch pattern:
    ```
    $ git checkout master
-   $ git checkout -b documentation-update-branch-strat
+   $ git checkout -b documentation
    $ git push --set-upstream origin documentation
    ```
 
 2. Develop approriate code changes, add, commit, push:
    ```
-   $ git add -A .
-   $ git commit -m "Added new feature code"
+   $ git add -A
+   $ git commit -m "Enter clear description of the commit reason/details"
    $ git push
    ```
 
 3. Navigate to the project on [Github](www.github.com):
-   1. Open Pull Request with respective branch name (e.g. documentation-update-branch-strat)
+   1. Open Pull Request with respective branch name (e.g. documentation)
    2. Pull Request must be reviewed to merge into Master
    3. Once reviewed/approved, merge can be completed into Master
-      -NOTE:  Deleting branch is recommended, but for purposes of this project, we will not delete any branches
+      -*NOTE:  Deleting branch is recommended, but for purposes of this project, we will not delete any branches.*
    4. Deploy master to staging environment.  
-      -If build/tests pass in staging, deploy to Production
-      -If build/tests fail in staging, rollback changes to previous release and restart process
+      *If build/tests pass in staging, deploy to Production
+       If build/tests fail in staging, rollback changes to previous release and restart process*  
 
 ## Team Marvel Considerations
 ```
 Why did Team Marvel choose this strategy?   
-1. Reason 1
-2. Reason 2
+1. There are a variety of different branching strategies, however, we felt Github Flow was the best option for  
+this short project.
+2. Github Flow provides easy management of branching without over-complicating the process.
 
 Other Comments:   
-Various branching strategies possible, etc
-Important to tack into account infrastructure and project needs when choosing a strategy
-Envs - Staging/Prod
-Tests - Merge into Master after successfull biuld in Stage, deploy to Prod?
-Merge Docs into master?
-etc
+-Need to refine staging/deploy environments
+-Need to create build tests and communication path/rollback if build fails in stating prior to Prod deploy
+-Need to define if documentation branch should be merged into master (currently, yes, but might change to no)
 ```
