@@ -1,7 +1,7 @@
 | [Return to Home](README.md)
 | ---------------------------------------------------- |
 
-# Branching Strategy
+# BBranching Strategy
 
 Team Marvel has selected the branching strategy of:  [**GitHub Flow**](https://guides.github.com/introduction/flow/)  
 Below are the agreed processes for the project:
@@ -26,7 +26,7 @@ Below are the agreed processes for the project:
    ```
    $ git clone https://github.com/rlennon/GweedoreDP.git
    $ cd GweedoreDP
-   $ git checkout master
+   $ git checkout master test
    $ git checkout -b feature-GWEEDRDP-99-create-login-page
    $ git push --set-upstream feature-GWEEDRDP-99-create-login-page
    ```
