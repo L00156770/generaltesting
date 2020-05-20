@@ -28,7 +28,7 @@ Below are the agreed processes for the project:
    $ cd GweedoreDP
    $ git checkout master
    $ git checkout -b feature-GWEEDRDP-99-create-login-page
-   $ git push --set-upstream feature-GWEEDRDP-99-create-login-page
+   $ git push --set-upstream origin feature-GWEEDRDP-99-create-login-page
    ```
 
 2. Develop approriate code changes, add, commit, push:
@@ -88,7 +88,7 @@ Below are the agreed processes for the project:
    ```
    $ git checkout master
    $ git checkout -b documentation-update-branch-strat
-   $ git push --set-upstream documentation-update-branch-strat
+   $ git push --set-upstream origin documentation
    ```
 
 2. Develop approriate code changes, add, commit, push:
