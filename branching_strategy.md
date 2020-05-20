@@ -25,6 +25,7 @@ Below are the agreed processes for the project:
 1. Pull from master into defined branch pattern:
    ```
    $ git clone https://github.com/rlennon/GweedoreDP.git
+   $ cd GweedoreDP
    $ git checkout master
    $ git checkout -b feature-GWEEDRDP-99-create-login-page
    $ git push --set-upstream feature-GWEEDRDP-99-create-login-page
